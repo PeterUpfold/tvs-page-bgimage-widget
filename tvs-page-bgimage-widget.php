@@ -62,7 +62,7 @@ class TVS_PageBGImageWidget extends WP_Widget {
     echo $args['before_widget'];
     
 ?>
-	<a href="<?php echo get_permalink( $instance['post-id'] ); ?>">
+	<a class="tvs-page-bgimage-widget-container" href="<?php echo get_permalink( $instance['post-id'] ); ?>">
 		<div class="tvs-page-bgimage-widget clearfix" style="background-image:url(<?php echo esc_url( get_the_post_thumbnail_url( $instance['post-id'], 'tvs-thumb-200' ) ); ?>)">
 			<h4 class="widgettitle"><?php echo esc_html( $instance['title'] ); ?></h4>
 		</div>
